@@ -58,6 +58,17 @@ html, body {
   border: px solid red !important;
 }
 
+#container {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    min-height: 300px;
+    min-width: 300px;
+    background-color: white;
+    overflow: hidden;
+    margin: 10px auto;
+    
+}
 .square {
   position: relative;
   width: 32%;
@@ -67,14 +78,7 @@ html, body {
   padding-bottom: 32%;
 }
 
-#container {
-    position: relative;
-    width: 40%;
-    height: auto;
-    background-color: white;
-    margin: 10px auto;
-    
-}
+
 
 .footer {
     position: absolute;
