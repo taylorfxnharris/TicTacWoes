@@ -33,37 +33,37 @@ $('.square').bind('click', function(event){  //this allows you to click once and
 		
 // horizontal
 	if (squares[0] == squares[1] && squares[1] == squares[2] && squares[0] == squares[2] && squares[0] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 	if (squares[3] == squares[4] && squares[4] == squares[5] && squares[3] == squares[5] && squares[3] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 	if (squares[6] == squares[7] && squares[7] == squares[8] && squares[6] == squares[8] && squares[6] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 // vertical 
 	if (squares[0] == squares[3] && squares[3] == squares[6] && squares[0] == squares[6] && squares[0] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 	if (squares[1] == squares[4] && squares[4] == squares[7] && squares[1] == squares[7] && squares[1] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 	if (squares[2] == squares[5] && squares[5] == squares[8] && squares[2] == squares[8] && squares[2] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 // diagonal
 	if (squares[0] == squares[4] && squares[4] == squares[8] && squares[0] == squares[8] && squares[0] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 	if (squares[2] == squares[4] && squares[4] == squares[6] && squares[2] == squares[6] && squares[2] != 0){  //have to do more because they all equal zero
-		console.log('player wins')
+		alert('player wins')
 		console.log(playerTurn)
 	}
 
