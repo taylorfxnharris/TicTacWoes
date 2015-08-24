@@ -15,10 +15,52 @@ $('.square').bind('click', function(event){  //this allows you to click once and
 		var id = ($(this).attr('id'))   // saving what I printed into an ID 
 		id = parseInt(id)				//parse int takes  a string and turns it into an integer
 		squares[id] = playerTurn
-		playerTurn == 1 || playerTurn == 2
+		playerTurn == 1 || playerTurn == 2 //
 		console.log(squares)
 
-	if (playerTurn == 1) { 
+		
+//modulo
+// horizontal
+
+//Winner
+	if (squares[0] == squares[1] && squares[1] == squares[2] && squares[0] == squares[2] && squares[0] != 0){  //have to do more because they all equal zero
+		$('.winner').text('winner' + playerTurn);
+		('player wins')
+		console.log(playerTurn)
+	}
+	if (squares[3] == squares[4] && squares[4] == squares[5] && squares[3] == squares[5] && squares[3] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+	if (squares[6] == squares[7] && squares[7] == squares[8] && squares[6] == squares[8] && squares[6] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+// vertical 
+	if (squares[0] == squares[3] && squares[3] == squares[6] && squares[0] == squares[6] && squares[0] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+	if (squares[1] == squares[4] && squares[4] == squares[7] && squares[1] == squares[7] && squares[1] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+	if (squares[2] == squares[5] && squares[5] == squares[8] && squares[2] == squares[8] && squares[2] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+// diagonal
+	if (squares[0] == squares[4] && squares[4] == squares[8] && squares[0] == squares[8] && squares[0] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+	if (squares[2] == squares[4] && squares[4] == squares[6] && squares[2] == squares[6] && squares[2] != 0){  //have to do more because they all equal zero
+		('player wins')
+		console.log(playerTurn)
+	}
+
+	
+if (playerTurn == 1) { 
 		$(this).css({'background-image': 'url(/images/drakehead.jpg)',
 					 'background-attachment': 'cover',
      				 'background-size': '100%'}); 
@@ -30,47 +72,14 @@ $('.square').bind('click', function(event){  //this allows you to click once and
      				 'background-size': '100%'});
 		playerTurn = 1
 	}
-		
-// horizontal
-	if (squares[0] == squares[1] && squares[1] == squares[2] && squares[0] == squares[2] && squares[0] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-	if (squares[3] == squares[4] && squares[4] == squares[5] && squares[3] == squares[5] && squares[3] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-	if (squares[6] == squares[7] && squares[7] == squares[8] && squares[6] == squares[8] && squares[6] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-// vertical 
-	if (squares[0] == squares[3] && squares[3] == squares[6] && squares[0] == squares[6] && squares[0] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-	if (squares[1] == squares[4] && squares[4] == squares[7] && squares[1] == squares[7] && squares[1] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-	if (squares[2] == squares[5] && squares[5] == squares[8] && squares[2] == squares[8] && squares[2] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-// diagonal
-	if (squares[0] == squares[4] && squares[4] == squares[8] && squares[0] == squares[8] && squares[0] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
-	if (squares[2] == squares[4] && squares[4] == squares[6] && squares[2] == squares[6] && squares[2] != 0){  //have to do more because they all equal zero
-		alert('player wins')
-		console.log(playerTurn)
-	}
 
-	
+
+//reset
+
 
 })
 //ideas
+// order is important winner
 //background url instead of red
 //look in console tells you the ID that you click on the event
 //everytime I click then the computer doesnt also have to move. 
