@@ -45,60 +45,68 @@ $('.square').one('click', function(event) { //allows one click
 	//DRYYYYY THIS UP ONE DAY JESUS, TAYLOR
 
 	if (squares[0] == squares[1] && squares[1] == squares[2] && squares[0] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
-
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);
+		//we make another statement with a variable for the sound for drake or meek
+		
 													// add breaks break the cycle break the code, exit, and reset the board, grabbing all divs, set HTML to an empty string.remvoe whatever is within the css remove it
 		console.log(player)  						//not on variables
 	}
 	
 	else if (squares[3] == squares[4] && squares[4] == squares[5] && squares[3] == squares[5] && squares[3] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 	else if (squares[6] == squares[7] && squares[7] == squares[8] && squares[6] == squares[8] && squares[6] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 // vertical 
 	else if (squares[0] == squares[3] && squares[3] == squares[6] && squares[0] == squares[6] && squares[0] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 	else if (squares[1] == squares[4] && squares[4] == squares[7] && squares[1] == squares[7] && squares[1] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 	else if (squares[2] == squares[5] && squares[5] == squares[8] && squares[2] == squares[8] && squares[2] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 // diagonal
 	else if (squares[0] == squares[4] && squares[4] == squares[8] && squares[0] == squares[8] && squares[0] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)
 	}
 	else if (squares[2] == squares[4] && squares[4] == squares[6] && squares[2] == squares[6] && squares[2] != 0){  //have to do more because they all equal zero
-		player = (playerTurn % 2 == 0 ? "Drake" : "Meek")     //it knows about the variable and equals the result
-		$('.winner').text('winner is: ' + player);
-		window.setTimeout(reset, 5000);		
+		player = (playerTurn % 2 == 0 ? "Drake" : "Meek Mill")     //it knows about the variable and equals the result
+		$('.winner').text(player + ' wins!');
+		window.setTimeout(reset, 3000);		
 		console.log(playerTurn)									
 	
 }
+	else if ((squares[0] && squares[1] && squares[2] && squares[3] && squares[4] && squares[5] && squares[6] && squares[7] && squares[8]) != 0){
+		$('.winner').text('It\'s a tie');
+		window.setTimeout(reset, 3000);		
+		console.log(playerTurn)
+	}
 	
+							
+		
 	//its a tie
 	
 
