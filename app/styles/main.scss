@@ -21,7 +21,7 @@ body {
   margin-right: auto;
 }
 
-// Display the score in the upper right hand corner
+
 .winner {
   position: relative;
   padding-right: 10px;
@@ -65,7 +65,7 @@ html, body {
     min-height: 300px;
     min-width: 300px;
     background-color: white;
-    overflow: hidden;
+    display: block;
     margin: 10px auto;
     
 }
@@ -78,6 +78,38 @@ html, body {
   padding-bottom: 32%;
 }
 
+.winner {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  height: auto;
+  width: auto;
+  float: left;
+  display: block;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 2em;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.reset {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    border: 2px solid #000;
+    float: right;
+    display: block;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 2em;
+    font-family: Tahoma, Geneva, sans-serif;
+
+}
 
 
 .footer {
