@@ -1,15 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Tic Tac Woes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=0.5">
-
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -20,54 +19,60 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    
-  </head>
-  <body>
+</head>
 
+<body>
     <div class="title"></div>
-    
-  <footer class="footer">
-
-  <style type="text/css">
-  A:link {text-decoration: none; color: black;}
-  A:visited {text-decoration: none; color: black;}
-  A:active {text-decoration: none; color: black;}
-  A:hover {text-decoration: underline; color: gold;}
-  </style>
-  <a href="http://www.howardmcqueen.com">Howard McQueen</a>
-  <br>
-  <a href="https://trello.com/b/7As5d2uG/game-development-roadmap">Trello</a>
-  <br>
-  <a href="http://www.howardmcqueen.com">Github</a>
-  <br>
-  <a href="http://www.howardmcqueen.com">Wireframe</a>
+    <footer class="footer">
+        <style type="text/css">
+        A:link {
+            text-decoration: none;
+            color: black;
+        }
+        
+        A:visited {
+            text-decoration: none;
+            color: black;
+        }
+        
+        A:active {
+            text-decoration: none;
+            color: black;
+        }
+        
+        A:hover {
+            text-decoration: underline;
+            color: gold;
+        }
+        </style>
+        <a href="http://www.howardmcqueen.com">Howard McQueen</a>
+        <br>
+        <a href="https://trello.com/b/7As5d2uG/game-development-roadmap">Trello</a>
+        <br>
+        <a href="http://www.howardmcqueen.com">Github</a>
+        <br>
+        <a href="http://www.howardmcqueen.com">Wireframe</a>
     </footer>
-
-  <div><img class="banner-image" src="/images/banner.png"></div>
-  <div id="container">
-  <div id="0" class='square r-border b-border'></div>
-  <div id="1" class='square r-border b-border'></div>
-  <div id="2" class='square b-border'></div>
-  <div id="3" class='square r-border b-border'></div>
-  <div id="4" class='square r-border b-border'></div>
-  <div id="5" class='square b-border'></div>
-  <div id="6" class='square r-border'></div>
-  <div id="7" class='square r-border'></div>
-  <div id="8" class='square'></div>
-  </div>
-<div class="winner"></div>
-<input class="reset" type="button" value="Reset"/>
-
-
-
-  <!-- build:js(.) scripts/vendor.js -->
+    <div><img class="banner-image" src="/images/banner.png"></div>
+    <div id="container">
+        <div id="0" class='square r-border b-border'></div>
+        <div id="1" class='square r-border b-border'></div>
+        <div id="2" class='square b-border'></div>
+        <div id="3" class='square r-border b-border'></div>
+        <div id="4" class='square r-border b-border'></div>
+        <div id="5" class='square b-border'></div>
+        <div id="6" class='square r-border'></div>
+        <div id="7" class='square r-border'></div>
+        <div id="8" class='square'></div>
+    </div>
+    <div class="winner"></div>
+    <input class="reset" type="button" value="Reset" />
+    <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    
     <!-- build:js(.) scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
@@ -82,20 +87,26 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-    
-
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
-  </body>
+</body>
+
 </html>
